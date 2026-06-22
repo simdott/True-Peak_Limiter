@@ -215,7 +215,6 @@ static void run(LADSPA_Handle handle, unsigned long sample_count) {
     unsigned long read_pos_l;
     unsigned long read_pos_r;
 
-    // Bypass removed - always process with gain reduction logic
     for (unsigned long i = 0; i < sample_count; i++) {
         float sample_l = in_l[i] * gain_linear;
         float sample_r = in_r[i] * gain_linear;
